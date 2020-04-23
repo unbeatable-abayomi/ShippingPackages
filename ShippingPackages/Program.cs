@@ -29,6 +29,18 @@ namespace ShippingPackages
 
             Console.WriteLine("==========Looping through Packages polymorphically============");
 
+            Package[] PackageArryList = { overnight1, overnight2, twoDayPackage, twoDayPackage1 };
+            decimal totalShipping = 0.0M; int counts = 1;
+            foreach (Package pack in PackageArryList)
+            {
+                Console.WriteLine(pack.ToString());
+                Console.WriteLine($"Package {counts} is : {pack.CalculateCost():C}");
+                totalShipping += pack.CalculateCost();
+
+            }
+
+            Console.WriteLine($"Total Shipping Cost For All Packages : { totalShipping:C}");
+            /*
             List<Package> packages = new List<Package> { overnight1,overnight2,twoDayPackage,twoDayPackage1};
 
             decimal totalShippingCost = 0.0M; int count = 1;
@@ -41,7 +53,7 @@ namespace ShippingPackages
             }
 
             Console.WriteLine($"Total Shipping Cost For All Packages : { totalShippingCost:C}");
-
+            */
 
 
 
