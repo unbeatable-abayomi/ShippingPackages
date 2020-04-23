@@ -34,6 +34,7 @@ namespace ShippingPackages
             decimal totalShippingCost = 0.0M; int count = 1;
             foreach(var package in packages)
             {
+                Console.WriteLine(package.ToString());
                 Console.WriteLine($"Package {count} is : {package.CalculateCost():C}");
                 totalShippingCost += package.CalculateCost();
                 count++;
