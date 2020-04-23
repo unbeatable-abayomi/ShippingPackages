@@ -45,7 +45,7 @@ namespace ShippingPackages
 
         public override string ToString()
         {
-            return $"Two Day Package: \n Recipient Name:{Recipent}\n Recipient Address: {RecipentAddress}\n Sender Name: {Sender}\n Sender Address: {SenderAddress}\n Total Cost: {CalculateCost():C}";
+            return $"\n Recipient Name:{Recipent}\n Recipient Address: {RecipentAddress}\n Sender Name: {Sender}\n Sender Address: {SenderAddress}\n Total Cost: {CalculateCost():C}";
         }
     }
 }
